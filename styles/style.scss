@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+// suez font
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+// open sans
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Suez+One&display=swap");
+$main-text-font: "Suez One", serif;
+$open-sans-font: "Open Sans", sans-serif;
+$navbar-home-font: "Kaushan Script", cursive;
+$main-color: rgba(218, 57, 43);
+$headers-blue: rgba(39, 36, 67);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: rgb(232, 232, 232);
+}
+
+.navbar-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding: 0 100px;
+    transform: translateY(-60px);
+    animation: navbarAnimation 2s forwards;
+    animation-delay: 0s;
+    opacity: 0;
+
+    @keyframes navbarAnimation {
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    & .home {
+        width: 166px;
+        height: 60px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: $main-color;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $navbar-home-font;
+        font-size: x-large;
+        cursor: pointer;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    & .navbar-links {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        & a {
+            font-size: large;
+            text-decoration: none;
+            color: black;
+            width: 100px;
+            height: 60px;
+            background-color: white;
+            padding: 20px;
+            font-family: $open-sans-font;
+            font-weight: 600;
+            transition: 0.4s;
+            text-align: center;
+
+            &:hover {
+                background-color: $main-color;
+                color: white;
+            }
+        }
+
+        & :first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        & :nth-child(5) {
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+
+.first-Section {
+    width: 100%;
+    height: 800px;
+    background-image: url(../assets/c837a6_aa803204cef842e0b9ad7d820e64f77c~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    & .main-content-container {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .main-text-container {
+            width: 90%;
+            height: 500px;
+            font-family: $open-sans-font;
+            animation: maintextAnimation 2s forwards;
+            opacity: 0;
+
+            @keyframes maintextAnimation {
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            & h1 {
+                font-size: 80px;
+                font-family: $main-text-font;
+                color: rgba(39, 36, 67);
+            }
+        }
+
+        & .appsDownloadContainer {
+            & img {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.secondSection {
+    width: 100%;
+    height: 500px;
+
+    & .secondSectionContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateY(-170px);
+
+        & .card {
+            overflow: hidden;
+            border-radius: 30px;
+            width: 400px;
+            height: 533px;
+            cursor: pointer;
+            position: relative;
+
+            & .cardbg {
+                transition: 0.6s;
+            }
+
+            & img {
+                transition: 1s;
+            }
+
+            &:hover {
+                & img {
+                    transform: scale(110%);
+                }
+                .cardbg {
+                    opacity: 0;
+                }
+            }
+
+            & .cardbg {
+                width: 100%;
+                height: 533px;
+                position: absolute;
+                top: 0;
+                background-color: #00000000;
+                background-image: linear-gradient(180deg, #ffffff00 0%, #dc143cb4 100%);
+                padding: 20px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-family: $open-sans-font;
+            }
+        }
+        & .last {
+            background-color: #fad961;
+            background-image: linear-gradient(180deg, #fad961 25%, #f76b1c 100%);
+            font-size: xx-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: $open-sans-font;
+            font-weight: 900;
+            transition: 0.4s;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+
+            &:hover {
+                background-color: #fad961;
+                background-image: linear-gradient(180deg, #fad961 25%, #fad961 100%);
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.aboutSection {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    & .abouttextContant {
+        width: 900px;
+        height: 600px;
+        text-align: center;
+        font-family: $open-sans-font;
+        font-size: 21px;
+        opacity: 0;
+        transition: 1s;
+        
+
+        & h1 {
+            font-family: $main-text-font;
+            font-size: 50px;
+            color: $headers-blue;
+        }
+
+        & p {
+            font-size: 18px;
+        }
+
+        & .aboutLearnMoreButton {
+            width: 142px;
+            height: 60px;
+            font-family: $main-text-font;
+            font-size: large;
+            background-color: $main-color;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            transition: 0.6s;
+            cursor: pointer;
+
+            &:hover {
+                color: black;
+                border: 1px solid black;
+                background: none;
+            }
+        }
+    }
+
+    & .picContainer {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+
+        & .stickerMain {
+            border-radius: 10px;
+        }
+
+        & .sticker {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
+    }
+}
+
+.our-games-section {
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    & .games-text-container {
+        text-align: center;
+
+        & h1 {
+            font-size: 50px;
+            color: $headers-blue;
+            font-family: $main-text-font;
+        }
+
+        & p {
+            font-size: 18px;
+            color: black;
+            font-family: $open-sans-font;
+            font-weight: 500;
+        }
+    }
+
+    & .games-card-container {
+        width: 1500px;
+        height: 1200px;
+        background-image: url(../assets/thridContainerCards/phonebg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .topCards {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            & .decription {
+                width: 400px;
+                height: 400px;
+                background-color: white;
+                border-radius: 15px;
+                padding: 20px 40px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: 5px 5px 10px rgba(220, 20, 60, 0.272);
+
+                & .header-card-container {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    font-family: $open-sans-font;
+
+                    & img {
+                        border-radius: 20px;
+                        box-shadow: 5px 5px 15px rgba(220, 20, 60, 0.346);
+                        border: 4px solid white;
+                    }
+                }
+
+                .pCotnainer p {
+                    font-family: $main-text-font;
+                    font-weight: 200;
+                }
+            }
+        }
+
+        & .bottCards {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            & .decription {
+                width: 400px;
+                height: 400px;
+                background-color: white;
+                border-radius: 15px;
+                padding: 20px 40px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: 5px 5px 10px rgba(220, 20, 60, 0.272);
+
+                & .header-card-container {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    font-family: $open-sans-font;
+
+                    & img {
+                        border-radius: 20px;
+                        box-shadow: 5px 5px 15px rgba(220, 20, 60, 0.346);
+                        border: 4px solid white;
+                    }
+                }
+
+                .pCotnainer p {
+                    font-family: $main-text-font;
+                    font-weight: 200;
+                }
+            }
+
+            .cute {
+                width: 400px;
+                height: 400px;
+                background: none;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                background-image: url(../assets/thridContainerCards/cute.jpg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 1s;
+                opacity: 0;
+                transform: translateX(200px);
+            }
+        }
+    }
+}
+
+.fixedsection1 {
+    width: 100%;
+    height: 700px;
+    background-image: url(../assets/fourCotnainer/dragon.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    & .fixedone {
+        width: 750px;
+        height: 700px;
+        color: white;
+        padding-top: 100px;
+
+        & h2 {
+            font-size: large;
+            font-family: $open-sans-font;
+        }
+
+        & h1 {
+            font-size: 50px;
+            font-family: $main-text-font;
+        }
+
+        & button {
+            background-color: #fcff72;
+            width: 150px;
+            height: 60px;
+            font-size: large;
+            color: black;
+            font-family: $main-text-font;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            font-weight: 100;
+        }
+    }
+
+    & .fixedtwo {
+        width: 700px;
+        height: 700px;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+
+.skySection {
+    width: 100%;
+    height: 600px;
+    background-image: url(../assets/fourCotnainer/sky.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    & .inputsContainer {
+        width: 440px;
+        height: 720px;
+        background-color: white;
+        border-radius: 20px;
+        transform: translateY(-250px);
+        padding: 40px;
+        color: $headers-blue;
+        font-family: $main-text-font;
+        font-weight: 200;
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & h3 {
+            font-size: 20px;
+        }
+
+        & form {
+            height: 500px;
+            width: 100%;
+
+            & .nameInputs {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 500px;
+
+                & input {
+                    width: 100%;
+                    padding: 10px;
+                    height: 50px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: 1px solid black;
+                }
+
+                & button {
+                    width: 100%;
+                    height: 100px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: none;
+                    background-color: $headers-blue;
+                    color: white;
+                    font-family: $main-text-font;
+                    font-weight: 200;
+                    font-size: x-large;
+                    transition: 0.4s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $main-color;
+                    }
+                }
+
+                & textarea {
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+                    outline: none;
+                    border: 1px solid black;
+                    resize: none;
+                }
+            }
+        }
+    }
+    & .subscribeContainer {
+        width: 388px;
+        height: 210px;
+        background-color: $main-color;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: white;
+        justify-content: space-evenly;
+        font-family: $main-text-font;
+
+        & h1 {
+            font-size: x-large;
+        }
+
+        & input {
+            width: 238px;
+            height: 60px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        & button {
+            width: 70px;
+            height: 60px;
+            border: none;
+            outline: none;
+            background-color: #fcff72;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+    }
+}
+
+//animation classes
+
+#happy {
+    transform: translateY(400px);
+    opacity: 0;
+    transition: 1s;
+}
