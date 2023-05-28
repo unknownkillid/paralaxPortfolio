@@ -15,6 +15,15 @@ $headers-blue: rgba(39, 36, 67);
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fad961;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+}
+
 section {
     background-color: rgb(232, 232, 232);
 }
@@ -32,6 +41,8 @@ section {
     animation: navbarAnimation 2s forwards;
     animation-delay: 0s;
     opacity: 0;
+    position: fixed;
+    z-index: 100;
 
     @keyframes navbarAnimation {
         100% {
@@ -98,7 +109,6 @@ section {
     height: 800px;
     background-image: url(../assets/c837a6_aa803204cef842e0b9ad7d820e64f77c~mv2.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 
     & .main-content-container {
@@ -227,7 +237,6 @@ section {
         font-size: 21px;
         opacity: 0;
         transition: 1s;
-        
 
         & h1 {
             font-family: $main-text-font;
@@ -288,6 +297,7 @@ section {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    overflow: hidden;
 
     & .games-text-container {
         text-align: center;
@@ -599,4 +609,87 @@ section {
     transform: translateY(400px);
     opacity: 0;
     transition: 1s;
+}
+
+.footer-container {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-text-font;
+    font-weight: 100;
+    background-color: rgb(232, 232, 232);
+    color: $headers-blue;
+
+    & .footerHeader {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        & .footerHome {
+            width: 166px;
+            height: 60px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: $main-color;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $navbar-home-font;
+            font-size: x-large;
+            cursor: pointer;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        & h1 {
+            font-family: $main-text-font;
+            color: $headers-blue;
+            font-weight: 100;
+        }
+    }
+
+    & .footercontent {
+        width: 80%;
+        height: 400px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+        & .footercard {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+        }
+
+        & .findus {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            & img {
+                width: 150px;
+            }
+        }
+        
+    }
+    & .copy {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

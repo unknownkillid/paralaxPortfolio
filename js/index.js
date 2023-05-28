@@ -40,3 +40,19 @@ function pageAnimations() {
 }
 
 pageAnimations();
+
+$(document).ready(function() {
+    let prevScrollPos = $(window).scrollTop();
+    const navbar = $('#navbar');
+  
+    $(window).scroll(function() {
+      const currentScrollPos = $(window).scrollTop();
+      if (prevScrollPos > currentScrollPos) {
+        navbar.css('top', '0');
+      } else {
+        navbar.css('top', `-${navbar.outerHeight()}px`);
+      }
+      prevScrollPos = currentScrollPos;
+    });
+      navbar.css('transition', 'top 0.3s ease');
+  });
