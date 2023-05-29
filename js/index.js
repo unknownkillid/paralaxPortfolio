@@ -1,8 +1,7 @@
-
 window.addEventListener('scroll', () => {
-    parallax = window.pageYOffset
+    parallax = window.pageYOffset;
     section.style.backgroundPositionX = `${-parallax / 2}px`;
-    console.log(parallax)
+    console.log(parallax);
 });
 
 
@@ -14,7 +13,7 @@ function pageAnimations() {
         } else {
             $('#aboutText').css('opacity', 0)
         }
-        if (parallax >= 2480) {
+        if (parallax >= 2180) {
             $('#cute').css({
                 'opacity': 1,
                 'transform': 'translateX(0px)'
@@ -25,7 +24,7 @@ function pageAnimations() {
                 'transform': 'translateX(200px)'
             })
         }
-        if (parallax >= 3300) {
+        if (parallax >= 2900) {
             $('#happy').css({
                 'opacity': 1,
                 'transform': 'translateY(0px)'

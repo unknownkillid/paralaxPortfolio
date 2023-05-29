@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -184,11 +185,16 @@ section {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  text-decoration: none;
+  color: black;
 }
 .secondSection .secondSectionContainer .last:hover {
   background-color: #fad961;
   background-image: linear-gradient(180deg, #fad961 25%, #fad961 100%);
   font-size: 40px;
+}
+.secondSection .secondSectionContainer .gameScroll {
+  text-decoration: none;
 }
 
 .aboutSection {
@@ -498,6 +504,7 @@ section {
 }
 .skySection .subscribeContainer {
   width: 388px;
+  border-radius: 10px;
   height: 210px;
   background-color: rgb(218, 57, 43);
   display: flex;
@@ -594,6 +601,10 @@ section {
   height: 300px;
   padding: 20px;
 }
+.footer-container .footercontent .footercard h3 a {
+  text-decoration: none;
+  color: rgb(218, 57, 43);
+}
 .footer-container .footercontent .findus {
   width: 400px;
   height: 300px;
@@ -610,4 +621,181 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1590px) {
+  body {
+    zoom: 75%;
+  }
+}
+@media screen and (max-width: 1187px) {
+  .secondSectionContainer {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .secondSection {
+    height: auto;
+  }
+  .card {
+    margin-top: 10px;
+  }
+  .our-games-section {
+    width: 100% !important;
+  }
+  .topCards {
+    width: 100% !important;
+  }
+  .bottCards {
+    width: 100% !important;
+  }
+  .games-card-container {
+    width: 100% !important;
+  }
+  .our-games-section {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 674px) {
+  .abouttextContant {
+    width: 500px !important;
+  }
+  .abouttextContant h1 {
+    font-size: 40px !important;
+  }
+  .picContainer {
+    width: 500px !important;
+  }
+}
+@media screen and (max-width: 528px) {
+  .aboutSection {
+    padding: 0;
+    width: 100%;
+  }
+  .aboutSection .picContainer {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+  }
+  .aboutSection .picContainer .stickerMain {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 712px) {
+  .footer-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .navbar-links {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .fixedone {
+    width: 100%;
+    padding: 15px;
+  }
+  .fixedone h1 {
+    font-size: xx-large !important;
+  }
+}
+@media screen and (max-width: 772px) {
+  .fixedtwo {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 648px) {
+  .skySection {
+    flex-direction: column !important;
+    height: auto;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .skySection .subscribeContainer {
+    transform: translateY(-150px);
+  }
+}
+@media screen and (max-width: 706px) {
+  .footer-container {
+    height: auto !important;
+    display: flex;
+    flex-direction: column !important;
+  }
+  .footer-container .footercontent {
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 384px) {
+  .abouttextContant {
+    padding: 20px !important;
+  }
+}
+@media screen and (max-width: 604px) {
+  .topCards {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .bottCards {
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important;
+  }
+  .bottCards .cute {
+    display: none !important;
+  }
+  .decription {
+    margin-top: 10px !important;
+  }
+}
+@media screen and (max-width: 410px) {
+  .copy h2 {
+    font-size: large !important;
+  }
+}
+@media screen and (max-width: 470px) {
+  .navbar-container {
+    width: 100% !important;
+    justify-content: space-between !important;
+    padding: 0 20px !important;
+  }
+  .fixedone {
+    width: 100% !important;
+  }
+  .abouttextContant {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main-content-container h1 {
+    font-size: 52px !important;
+  }
+  .inputsContainer {
+    width: 90% !important;
+  }
+  .subscribeContainer {
+    width: 95% !important;
+    padding: 10px 5px !important;
+  }
+  .copy h2 {
+    font-size: 15px !important;
+  }
+  .findus {
+    padding: 0 15px !important;
+  }
+}
+@media screen and (max-width: 308px) {
+  .card {
+    zoom: 80% !important;
+  }
+}
+@media screen and (max-width: 336px) {
+  .sticker {
+    transform: translateY(-100px) !important;
+    zoom: 60% !important;
+  }
 }/*# sourceMappingURL=style.css.map */
