@@ -1,6 +1,6 @@
 window.addEventListener('scroll', () => {
     parallax = window.pageYOffset;
-    section.style.backgroundPositionX = `${-parallax / 2}px`;
+    paralaxsection.style.backgroundPositionX = `${-parallax / 2}px`;
     console.log(parallax);
 });
 

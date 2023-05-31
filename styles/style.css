@@ -33,9 +33,10 @@ section {
   transform: translateY(-60px);
   animation: navbarAnimation 2s forwards;
   animation-delay: 0s;
+  background: none;
   opacity: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 5000;
 }
 @keyframes navbarAnimation {
   100% {
@@ -66,6 +67,7 @@ section {
   align-items: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
 }
 .navbar-container .navbar-links a {
   font-size: large;
@@ -798,4 +800,181 @@ section {
     transform: translateY(-100px) !important;
     zoom: 60% !important;
   }
+}
+.kiponFirstSection {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.kiponFirstSection .mainCotnanetkipon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.kiponFirstSection .mainCotnanetkipon .kiponMainCard {
+  width: 672px;
+  height: 615px;
+  background-color: white;
+  transform: translateY(150px) translateX(80px);
+  border-radius: 15px;
+  padding: 50px;
+}
+.kiponFirstSection .mainCotnanetkipon .kiponMainCard .header-card-container {
+  flex-direction: row;
+  display: flex;
+}
+.kiponFirstSection .mainCotnanetkipon .kiponMainCard .header-card-container img {
+  border-radius: 15px;
+  border: 5px solid white;
+  box-shadow: 0xp 5px 10px crimson;
+}
+.kiponFirstSection .mainCotnanetkipon .kiponMainCard .header-card-container .logotitles {
+  color: rgb(39, 36, 67);
+  font-family: "Suez One", serif;
+}
+.kiponFirstSection .mainCotnanetkipon .kiponMainCard h1 {
+  font-size: 50px;
+  font-family: "Suez One", serif;
+  color: rgb(39, 36, 67);
+  font-weight: 100;
+}
+.kiponFirstSection .mainCotnanetkipon .kiponMainCard p {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 36, 67);
+}
+
+.fixedKiponSection {
+  background-image: url(../assets/kiponFullpage/kiponBG.jpg);
+  width: 100%;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kiponCardsSection {
+  width: 100%;
+  height: 700px;
+  padding: 100px;
+}
+.kiponCardsSection h1 {
+  color: rgb(39, 36, 67);
+  font-family: "Suez One", serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+.kiponCardsSection .cards-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.kiponCardsSection .cards-container .card1kiponscreens {
+  width: 807px;
+  height: 485px;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 100 !important;
+  transition: 0.4s;
+}
+.kiponCardsSection .cards-container .card1kiponscreens img {
+  transition: 0.4s;
+}
+.kiponCardsSection .cards-container .card1kiponscreens:hover img {
+  transform: scale(110%);
+}
+
+.testimonialsKiponSection {
+  width: 100%;
+  height: 800px;
+  padding: 100px;
+  display: flex;
+  align-items: cneter;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.testimonialsKiponSection .revmain {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testimonialsKiponSection .revmain h1 {
+  font-size: 50px;
+  color: rgb(39, 36, 67);
+  font-family: "Suez One", serif;
+  margin-left: 40px;
+}
+.testimonialsKiponSection .revmain .reviews {
+  width: 250px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.testimonialsKiponSection .revmain .reviews .ratingstarred {
+  width: 180px;
+  height: 50px;
+  background-color: rgb(218, 57, 43);
+  border-radius: 50px;
+}
+.testimonialsKiponSection .revmain .reviews .ratingstarred .ratingnumberandstar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.testimonialsKiponSection .revmain .reviews .ratingstarred .ratingnumberandstar .stardiv {
+  color: white;
+}
+.testimonialsKiponSection .revmain .reviews .ratingstarred .ratingnumberandstar .div41 {
+  background: white;
+  border-radius: 50px;
+  width: 60%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.testimonialsKiponSection .testimonalparacontainer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.testimonialsKiponSection .testimonalparacontainer .testimonialcards {
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonialsKiponSection .testimonalparacontainer .testimonialcards p {
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+  color: rgb(39, 36, 67);
+  font-weight: 500;
+}
+.testimonialsKiponSection .testimonalparacontainer .testimonialcards h3 {
+  font-family: "Suez One", serif;
+  color: rgb(39, 36, 67);
+  font-size: x-large;
 }/*# sourceMappingURL=style.css.map */
