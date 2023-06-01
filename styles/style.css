@@ -38,6 +38,9 @@ section {
   position: fixed;
   z-index: 5000;
 }
+.navbar-container a {
+  text-decoration: none;
+}
 @keyframes navbarAnimation {
   100% {
     transform: translateY(0px);
@@ -816,11 +819,19 @@ section {
 }
 .kiponFirstSection .mainCotnanetkipon .kiponMainCard {
   width: 672px;
-  height: 615px;
+  height: 555px;
   background-color: white;
-  transform: translateY(150px) translateX(80px);
+  transform: translateY(0px) translateX(0px);
   border-radius: 15px;
   padding: 50px;
+  animation: maincard 2s forwards;
+  opacity: 0;
+}
+@keyframes maincard {
+  100% {
+    transform: translateY(150px) translateX(80px);
+    opacity: 1;
+  }
 }
 .kiponFirstSection .mainCotnanetkipon .kiponMainCard .header-card-container {
   flex-direction: row;
@@ -853,6 +864,26 @@ section {
   height: 700px;
   background-attachment: fixed;
   background-position: center 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixedKiponSectionrobo {
+  background-image: url(../assets/robotnixfull/robofixed.jpg);
+  width: 100%;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixedKiponSectiontreasure {
+  background-image: url(../assets/treasure/treasurefixed.jpg);
+  width: 100%;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center -50px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -977,4 +1008,243 @@ section {
   font-family: "Suez One", serif;
   color: rgb(39, 36, 67);
   font-size: x-large;
+}
+
+.fixedsection2kipon {
+  width: 100%;
+  height: 700px;
+  background-image: url(../assets/kiponFullpage/fixedbackground.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fixedsection2kipon .absolutered {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(220, 20, 60, 0.7058823529) 70%);
+}
+.fixedsection2kipon h1 {
+  font-family: "Suez One", serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  z-index: 123;
+}
+.fixedsection2kipon p {
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  color: white;
+  z-index: 123;
+  text-align: center;
+}
+
+.fixedsection3kipon {
+  width: 100%;
+  height: 700px;
+  background-image: url(../assets/treasure/fixed2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fixedsection3kipon .absolutered {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(220, 20, 60, 0.7058823529) 70%);
+}
+.fixedsection3kipon h1 {
+  font-family: "Suez One", serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  z-index: 123;
+}
+.fixedsection3kipon p {
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  color: white;
+  z-index: 123;
+  text-align: center;
+}
+
+.robosection2fixed {
+  width: 100%;
+  height: 700px;
+  background-image: url(../assets/robotnixfull/fixed2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.robosection2fixed .absolutered {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(220, 20, 60, 0.7058823529) 70%);
+}
+.robosection2fixed h1 {
+  font-family: "Suez One", serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  z-index: 123;
+}
+.robosection2fixed p {
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  color: white;
+  z-index: 123;
+  text-align: center;
+}
+
+.playnowsection {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+.playnowsection .playnowContainer {
+  width: 550px;
+  height: 200px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 0px 1px rgb(218, 57, 43);
+}
+.playnowsection .playnowContainer h1 {
+  font-size: 50px;
+  font-family: "Suez One", serif;
+  color: rgb(39, 36, 67);
+}
+
+@media screen and (max-width: 1276px) {
+  .kiponCardsSection {
+    height: auto;
+  }
+  .kiponCardsSection .cards-container {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .card1kiponscreens {
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 946px) {
+  .revmain {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .testimonalparacontainer {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .testimonialsKiponSection {
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 624px) {
+  .mainCotnanetkipon {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .mainCotnanetkipon .kiponMainCard {
+    transform: translateX(0px) translateY(100px) !important;
+  }
+  .kiponCardsSection {
+    padding: 20px !important;
+  }
+  .kiponCardsSection .card1kiponscreens {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .kiponCardsSection .card1kiponscreens .cardimageskipon {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 509px) {
+  .kiponMainCard {
+    zoom: 90%;
+  }
+}
+@media screen and (max-width: 595px) {
+  .fixedsection2kipon h1 {
+    font-size: 30px !important;
+    padding: 5px !important;
+  }
+  .fixedsection2kipon p {
+    font-size: 15px !important;
+    padding: 5px !important;
+  }
+}
+@media screen and (max-width: 462px) {
+  .kiponMainCard {
+    zoom: 80%;
+  }
+  .testimonialsKiponSection {
+    padding: 30px !important;
+  }
+  .testimonialsKiponSection .testimonialcards {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 415px) {
+  .playnowContainer {
+    width: 90% !important;
+  }
+  .kiponMainCard {
+    zoom: 70% !important;
+  }
+}
+@media screen and (max-width: 361px) {
+  .kiponMainCard {
+    zoom: 60% !important;
+    transform: translateY(400px) translateX(0px) !important;
+  }
+}
+@media screen and (max-width: 327px) {
+  .revmain {
+    flex-direction: column !important;
+    display: flex !important;
+    height: auto !important;
+  }
+  .revmain h1 {
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 315px) {
+  .testimonialcards p {
+    font-size: 14px !important;
+  }
+  .kiponMainCard {
+    zoom: 60% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -13,12 +13,12 @@
     <header>
         <nav>
             <div class="navbar-container" id="navbar">
-                <div class="home">Tropo Games</div>
+                <a href="./index.html"><div class="home">Tropo Games</div></a>
 
 
                 <div class="navbar-links">
-                    <a href="#">Home</a>
-                    <a href="#">Games</a>
+                    <a href="#paralaxsection">Home</a>
+                    <a href="#games">Games</a>
                     <a href="#">Careers</a>
                     <a href="#">About</a>
                     <a href="#inputScroll">Contact</a>
@@ -29,6 +29,12 @@
 
 
     <script src="js/index.js"></script>
+
+    <script>
+        $(function () {
+            $("#index").load("./index.html");
+        });
+    </script>
 </body>
 
 </html>
