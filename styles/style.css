@@ -1247,4 +1247,357 @@ section {
   .kiponMainCard {
     zoom: 60% !important;
   }
+}
+.careersFirstSection {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+.careersFirstSection .hiringContainer {
+  width: 100%;
+  height: 300px;
+  padding: 0 100px;
+}
+.careersFirstSection .hiringContainer h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 36, 67);
+  font-size: 18px;
+}
+.careersFirstSection .hiringContainer h1 {
+  font-size: 50px;
+  font-family: "Suez One", serif;
+  color: rgb(39, 36, 67);
+}
+.careersFirstSection .hiringContainer p {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 36, 67);
+}
+
+.jobopening-section {
+  width: 100%;
+  height: 850px;
+  padding: 0 100px;
+}
+.jobopening-section .jobcontainer {
+  width: 100%;
+  height: 850px;
+  background-color: rgb(218, 57, 43);
+}
+.jobopening-section .jobcontainer h1 {
+  font-size: 50px;
+  color: rgb(39, 36, 67);
+  font-family: "Suez One", serif;
+  text-align: center;
+}
+.jobopening-section .jobcontainer .jobcards-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard {
+  width: 350px;
+  height: 650px;
+  color: white;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard:hover .cardimg {
+  transform: scale(120%);
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard .jobimg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 35px;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard .jobimg img {
+  transition: 1s;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard h2 {
+  font-family: "Suez One", serif;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard h3 {
+  font-family: "Suez One", serif;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard p {
+  font-family: "Open Sans", sans-serif;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard button {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-family: "Suez One", serif;
+  color: white;
+  background-color: rgb(39, 36, 67);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: x-large;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.jobopening-section .jobcontainer .jobcards-container .jobcard button:hover {
+  background-color: #29305b;
+}
+
+.careersfixed-section {
+  width: 100%;
+  height: 500px;
+  padding: 0 100px;
+}
+.careersfixed-section .careersfixed {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/fourCotnainer/sky.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1 !important;
+}
+.careersfixed-section .careersfixed .darkbg {
+  background-color: rgba(71, 18, 121, 0.566);
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+}
+.careersfixed-section .careersfixed .darkbg .index {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 25px;
+  z-index: 200 !important;
+}
+.careersfixed-section .careersfixed .darkbg .index2 {
+  font-family: "Suez One", serif;
+  color: white;
+  font-size: 50px;
+  z-index: 200 !important;
+}
+.careersfixed-section .careersfixed .darkbg button {
+  width: 200px;
+  height: 50px;
+  background-color: #fad961;
+  font-family: "Suez One", serif;
+  color: white;
+  font-size: large;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.careersfixed-section .careersfixed .darkbg button:hover {
+  background-color: #fcff72;
+}
+
+@media screen and (max-width: 1669px) {
+  .jobcards-container {
+    flex-wrap: wrap !important;
+    height: auto !important;
+  }
+  .jobcontainer {
+    height: auto !important;
+  }
+  .jobcard {
+    margin: 20px !important;
+  }
+  .jobopening-section {
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 1027px) {
+  .jobcard {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 572px) {
+  .hiringContainer {
+    zoom: 90% !important;
+  }
+}
+@media screen and (max-width: 515px) {
+  .hiringContainer {
+    zoom: 80% !important;
+  }
+}
+@media screen and (max-width: 463px) {
+  .jobopening-section {
+    padding: 0 !important;
+  }
+  .careersfixed-section {
+    padding: 0 !important;
+  }
+  .darkbg {
+    padding: 0 !important;
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hiringContainer {
+    padding: 20px !important;
+    zoom: 100% !important;
+    height: auto !important;
+    text-align: center;
+  }
+  .hiringContainer p {
+    font-size: x-large !important;
+  }
+}
+.registerContainer {
+  width: 600px;
+  height: 100%;
+  background-color: rgb(39, 36, 67);
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  transform: translateX(500px);
+  opacity: 0;
+  overflow-y: scroll;
+}
+.registerContainer header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.registerContainer header h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Suez One", serif;
+}
+.registerContainer header button {
+  width: 50px;
+  height: 50px;
+  font-size: xx-large;
+  color: rgb(39, 36, 67);
+}
+.registerContainer main {
+  width: 100%;
+  height: auto;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.registerContainer main .inputsContainerRegister {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.registerContainer main .inputsContainerRegister .namecontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.registerContainer main .inputsContainerRegister .namecontainer label {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 36, 67);
+  font-size: large;
+}
+.registerContainer main .inputsContainerRegister .namecontainer input {
+  width: 200px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 20px;
+  font-family: "Suez One", serif;
+  font-size: 20px;
+}
+.registerContainer main .inputsContainerRegister .comments label {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 36, 67);
+  font-size: 20px;
+}
+.registerContainer main .inputsContainerRegister .comments textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 20px;
+}
+.registerContainer main .inputsContainerRegister button {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(218, 57, 43);
+  color: white;
+  font-family: "Suez One", serif;
+  font-size: x-large;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+.registerContainer main .optionsContainer {
+  width: 100%;
+  height: auto;
+}
+.registerContainer main .optionsContainer select {
+  width: 100%;
+  height: 60px;
+  border: 1px solid black;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Suez One", serif;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 448px) {
+  .registerContainer {
+    width: 100% !important;
+    zoom: 90% !important;
+  }
+}
+@media screen and (max-width: 378px) {
+  .namecontainer {
+    flex-direction: column !important;
+  }
+  .namecontainer div {
+    width: 100% !important;
+  }
+  .namecontainer input {
+    width: 100% !important;
+  }
+}
+.comein {
+  animation: fadein 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }/*# sourceMappingURL=style.css.map */

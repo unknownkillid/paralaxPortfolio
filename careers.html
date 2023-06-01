@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="registerContainer" id="registerContainerMain">
+        <header>
+            <h1>Join Our Team</h1>
+            <button class="registerX" id="registerXBtn">X</button>
+        </header>
+
+        <main>
+            <div class="inputsContainerRegister">
+                <div class="namecontainer">
+                    <div>
+                        <label for="namename">Name*</label>
+                        <br> <br> <input type="text" min="3" max="10">
+                    </div>
+
+                    <div>
+                        <label for="name2name2">Last Name*</label>
+                        <br> <br> <input type="text" min="3" max="10">
+                    </div>
+                </div>
+                <br><br>
+                <div class="namecontainer">
+                    <div>
+                        <label for="emailemail">Email*</label>
+                        <br> <br> <input type="email" min="3" max="10">
+                    </div>
+
+                    <div>
+                        <label for="name2name2">Phone</label>
+                        <br> <br> <input type="number" min="3" max="10">
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="optionsContainer">
+                    <select name="position" id="positionSelect">
+                        <option hidden selected>Choose Position</option>
+                        <option>Community Manager</option>
+                        <option>QA Tester</option>
+                        <option>Game Designer</option>
+                        <option>Game Developer</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="namecontainer">
+                    <div>
+                        <label for="cvcv">CV URL*</label>
+                        <br> <br> <input type="text" min="3" max="10">
+                    </div>
+
+                    <div>
+                        <label for="linkdinurl">Linkedin URL*</label>
+                        <br> <br> <input type="text" min="3" max="10">
+                    </div>
+                </div>
+                <br><br>
+                <div class="comments">
+                    <label for="commentarea">Any Comments</label>
+                   <br> <textarea name="comment" id="commentarea" cols="30" rows="10"></textarea>
+                </div>
+
+                <br><button class="cvsubmit">Submit</button>
+            </div>
+        </main>
+    </div>
+    <section class="careersFirstSection">
+        <div id="header"></div>
+
+        <div class="hiringContainer">
+            <h3>Help Us Change the Way People Play</h3>
+            <br>
+            <h1>We’re Hiring</h1>
+            <br>
+            <p>We're seeking talented individuals who share our vision and are eager <br> to make a significant impact
+                in the
+                gaming world. If you're looking for <br> a dynamic and innovative work environment where your skills and
+                <br> ideas are valued, then we want to hear from you.
+
+            </p>
+        </div>
+    </section>
+
+    <section class="jobopening-section">
+        <div class="jobcontainer">
+            <br><br>
+            <h1>Job Openings</h1>
+            <div class="jobcards-container">
+                <div class="jobcard">
+                    <div class="jobimg">
+                        <img src="assets/career/card1.jpg" class="cardimg" alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <br>
+                        <h2>Community Manager</h2>
+                        <h3>San Francisco, CA</h3>
+
+                        <br>
+                        <p>you'll play a pivotal role in fostering a vibrant and inclusive gaming community. You'll be
+                            the
+                            bridge between our players and the development team, ensuring that their voices are heard,
+                            their
+                            concerns are addressed, and their experiences are enhanced.</p>
+                    </div>
+
+                    <br> <button class="applybutton">Apply</button>
+                </div>
+                <div class="jobcard">
+                    <div class="jobimg">
+                        <img src="assets/career/card2.jpg" class="cardimg" alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <br>
+                        <h2>QA Tester</h2>
+                        <h3>San Francisco, CA</h3>
+
+                        <br>
+                        <p>As a QA Tester, you'll play a crucial role in identifying bugs, providing valuable feedback,
+                            and
+                            contributing to the overall improvement of our games. Your meticulous attention to detail
+                            and
+                            passion for gaming will help us deliver polished and enjoyable experiences to our players.
+                        </p>
+                    </div>
+
+                    <br> <button class="applybutton">Apply</button>
+                </div>
+                <div class="jobcard">
+                    <div class="jobimg">
+                        <img src="assets/career/card3.jpg" class="cardimg" alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <br>
+                        <h2>Game Designer</h2>
+                        <h3>San Francisco, CA</h3>
+
+                        <br>
+                        <p>Are you passionate about creating immersive and captivating gaming experiences? Do you have a
+                            knack for designing innovative gameplay mechanics, intriguing narratives, and visually
+                            stunning
+                            worlds? If so, we're looking for a talented Game Designer to join our team.</p>
+                    </div>
+                    <br> <button class="applybutton">Apply</button>
+                </div>
+                <div class="jobcard">
+                    <div class="jobimg">
+                        <img src="assets/career/card4.jpg" class="cardimg" alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <br>
+                        <h2>Game Developer</h2>
+                        <h3>San Francisco, CA</h3>
+
+                        <br>
+                        <p>Are you a talented and passionate Game Developer ready to embark on an exciting journey of
+                            game
+                            creation? Do you have the skills to turn ideas and concepts into immersive gameplay
+                            experiences?
+                            If so, we're looking for you to join our team in San Francisco, CA, and contribute to the
+                            development of our next groundbreaking game.</p>
+                    </div>
+
+                    <br> <button class="applybutton">Apply</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="careersfixed-section">
+        <div class="careersfixed">
+            <div class="darkbg">
+                <h2 class="index">Didn’t Find the Position You’re Looking For? </h2>
+                <br>
+                <h1 class="index2">Send Us Your CV</h1>
+                <br><br><button class="applyNowButton" id="applyNowCV">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("./navbar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <script src="js/careers.js"></script>
+</body>
+
+</html>

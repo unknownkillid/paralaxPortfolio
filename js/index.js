@@ -1,5 +1,5 @@
 window.addEventListener('scroll', () => {
-    parallax = window.pageYOffset;
+    const parallax = window.pageYOffset;
     paralaxsection.style.backgroundPositionX = `${-parallax / 2}px`;
     console.log(parallax);
 });
@@ -55,3 +55,5 @@ $(document).ready(function() {
     });
       navbar.css('transition', 'top 0.3s ease');
   });
+  
+  

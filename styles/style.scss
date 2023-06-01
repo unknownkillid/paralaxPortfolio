@@ -1435,3 +1435,410 @@ section {
         zoom: 60% !important;
     }
 }
+
+// careers page SCSS !!! =====================================================
+
+.careersFirstSection {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+
+    & .hiringContainer {
+        width: 100%;
+        height: 300px;
+        padding: 0 100px;
+
+        & h3 {
+            font-family: $open-sans-font;
+            color: $headers-blue;
+            font-size: 18px;
+        }
+
+        & h1 {
+            font-size: 50px;
+            font-family: $main-text-font;
+            color: $headers-blue;
+        }
+
+        & p {
+            font-size: 18px;
+            font-family: $open-sans-font;
+            color: $headers-blue;
+        }
+    }
+}
+
+.jobopening-section {
+    width: 100%;
+    height: 850px;
+    padding: 0 100px;
+
+    & .jobcontainer {
+        width: 100%;
+        height: 850px;
+        background-color: $main-color;
+
+        & h1 {
+            font-size: 50px;
+            color: $headers-blue;
+            font-family: $main-text-font;
+            text-align: center;
+        }
+
+        & .jobcards-container {
+            width: 100%;
+            height: 700px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            & .jobcard {
+                width: 350px;
+                height: 650px;
+                color: white;
+                margin: 0 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &:hover {
+                    .cardimg {
+                        transform: scale(120%);
+                    }
+                }
+
+                & .jobimg {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    border-radius: 35px;
+
+                    & img {
+                        transition: 1s;
+                    }
+                }
+
+                & h2 {
+                    font-family: $main-text-font;
+                }
+
+                & h3 {
+                    font-family: $main-text-font;
+                }
+
+                & p {
+                    font-family: $open-sans-font;
+                }
+
+                & button {
+                    width: 200px;
+                    height: 50px;
+                    text-align: center;
+                    font-family: $main-text-font;
+                    color: white;
+                    background-color: $headers-blue;
+                    border: none;
+                    border-radius: 10px;
+                    outline: none;
+                    font-size: x-large;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        background-color: #29305b;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.careersfixed-section {
+    width: 100%;
+    height: 500px;
+    padding: 0 100px;
+
+    & .careersfixed {
+        width: 100%;
+        height: 500px;
+        background-image: url(../assets/fourCotnainer/sky.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1 !important;
+        & .darkbg {
+            background-color: rgba(71, 18, 121, 0.566);
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 100px;
+
+            & .index {
+                font-family: $open-sans-font;
+                color: white;
+                font-size: 25px;
+                z-index: 200 !important;
+            }
+
+            & .index2 {
+                font-family: $main-text-font;
+                color: white;
+                font-size: 50px;
+                z-index: 200 !important;
+            }
+
+            & button {
+                width: 200px;
+                height: 50px;
+                background-color: #fad961;
+                font-family: $main-text-font;
+                color: white;
+                font-size: large;
+                border-radius: 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: #fcff72;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1669px) {
+    .jobcards-container {
+        flex-wrap: wrap !important;
+        height: auto !important;
+    }
+
+    .jobcontainer {
+        height: auto !important;
+    }
+
+    .jobcard {
+        margin: 20px !important;
+    }
+
+    .jobopening-section {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 1027px) {
+    .jobcard {
+        align-items: center !important;
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .hiringContainer {
+        zoom: 90% !important;
+    }
+}
+@media screen and (max-width: 515px) {
+    .hiringContainer {
+        zoom: 80% !important;
+    }
+}
+
+@media screen and (max-width: 463px) {
+    .jobopening-section {
+        padding: 0 !important;
+    }
+
+    .careersfixed-section {
+        padding: 0 !important;
+    }
+
+    .darkbg {
+        padding: 0 !important;
+        text-align: center !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hiringContainer {
+        padding: 20px !important;
+        zoom: 100% !important;
+        height: auto !important;
+        text-align: center;
+
+        & p {
+            font-size: x-large !important;
+        }
+    }
+}
+
+.registerContainer {
+    width: 600px;
+    height: 100%;
+    background-color: $headers-blue;
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    transform: translateX(500px);
+    opacity: 0;
+    overflow-y: scroll;
+
+
+    & header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        & h1 {
+            color: white;
+            font-size: 40px;
+            font-family: $main-text-font;
+        }
+
+        & button {
+            width: 50px;
+            height: 50px;
+            font-size: xx-large;
+            color: $headers-blue;
+        }
+    }
+
+    & main {
+        width: 100%;
+        height: auto;
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & .inputsContainerRegister {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            & .namecontainer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                & label {
+                    font-family: $open-sans-font;
+                    color: $headers-blue;
+                    font-size: large;
+                }
+
+                & input {
+                    width: 200px;
+                    height: 60px;
+                    border: 1px solid black;
+                    border-radius: 15px;
+                    appearance: none;
+                    padding: 20px;
+                    font-family: $main-text-font;
+                    font-size: 20px;
+                }
+            }
+
+            & .comments {
+                & label {
+                    font-family: $open-sans-font;
+                    color: $headers-blue;
+                    font-size: 20px;
+                }
+
+                & textarea {
+                    width: 100%;
+                    height: 150px;
+                    resize: none;
+                    padding: 20px;
+                }
+            }
+
+            & button {
+                width: 100%;
+                height: 50px;
+                background-color: $main-color;
+                color: white;
+                font-family: $main-text-font;
+                font-size: x-large;
+                border-radius: 15px;
+                outline: none;
+                border: none;
+            }
+        }
+
+        & .optionsContainer {
+            width: 100%;
+            height: auto;
+
+            & select {
+                width: 100%;
+                height: 60px;
+                border: 1px solid black;
+                appearance: none;
+                cursor: pointer;
+                text-align: center;
+                font-family: $main-text-font;
+                font-size: x-large;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .registerContainer {
+        width: 100% !important;
+        zoom: 90% !important;
+    }
+}
+@media screen and (max-width: 378px) {
+    .namecontainer {
+        flex-direction: column !important;
+
+        & div {
+            width: 100% !important;
+        }
+
+        & input {
+            width: 100% !important;
+        }
+    }
+}
+
+
+
+.comein {
+    animation: fadein 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
