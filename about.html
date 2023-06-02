@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/kiponFullpage/kiponLogo.jpg">
+
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     </section>
 
     <section class="paralaxSection">
-        <div class="paralaxImgCotnainer"></div>
+        <div class="paralaxImgCotnainer" id="aboutParalax"></div>
         <div class="paralaxTextContainer">
             <div class="abouttextContainer">
                 <p>Welcome to our world of interactive entertainment, where we are dedicated to creating games that
@@ -38,7 +40,7 @@
         </div>
     </section>
 
-    <section class="fixedaboutsection">
+    <section class="fixedaboutsection" id="bgmovedemon">
         <div class="fixedbackgroundblendmode"></div>
         <div class="aboutwhatcontainer">
             <h1>What We Are About</h1>
@@ -103,12 +105,13 @@
         </div>
     </section>
 
-    <section class="aboutFixedSection2">
+    <section class="aboutFixedSection2" id="workingaboutsection">
         <div class="fixed2ContainerAbout">
             <div class="fixed2FirstTextContainer">
                 <h3>Our Offices</h3>
                 <h1>Our Studio in <br> San Francisco</h1>
-               <br> <p>Within our state-of-the-art facility, our talented team of developers, designers, artists, and
+                <br>
+                <p>Within our state-of-the-art facility, our talented team of developers, designers, artists, and
                     engineers work collaboratively to bring our vision to life. Our studio embodies a culture of
                     creativity, where ideas flow freely and boundaries are constantly pushed.</p>
             </div>
@@ -117,9 +120,12 @@
                 <img src="assets/aboutassets/cat.png" alt="">
 
                 <h2>We’d Love to Work With You</h2>
-                <br><p>Join us and let's create something extraordinary together. We're looking for talented individuals like you to be a part of our team. Together, we'll shape the future of interactive entertainment.</p>
+                <br>
+                <p>Join us and let's create something extraordinary together. We're looking for talented individuals
+                    like you to be a part of our team. Together, we'll shape the future of interactive entertainment.
+                </p>
 
-                <br><button>Explore Opportunities</button>
+                <br> <a href="./careers.html"> <button>Explore Opportunities</button></a>
             </div>
         </div>
     </section>
@@ -135,6 +141,8 @@
             $("#footer").load("footer.html");
         });
     </script>
+
+    <script src="./js/aboutparalax.js"></script>
 </body>
 
 </html>

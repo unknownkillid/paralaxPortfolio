@@ -1,8 +1,8 @@
-window.addEventListener('scroll', () => {
-    const parallax = window.pageYOffset;
-    paralaxsection.style.backgroundPositionX = `${-parallax / 2}px`;
-    console.log(parallax);
+$(window).scroll(function() {
+    const parallax = $(window).scrollTop();
+    $('#paralaxsection').css('background-position-x', `${-parallax / 5}px`);
 });
+
 
 
 function pageAnimations() {
@@ -56,4 +56,11 @@ $(document).ready(function() {
       navbar.css('transition', 'top 0.3s ease');
   });
   
-  
+  $(window).scroll(function() {
+    const parallax = $(window).scrollTop();
+    $('#fixed1').css('background-position-y', `${-parallax / 30}px`);
+});
+  $(window).scroll(function() {
+    const parallax = $(window).scrollTop();
+    $('#fixed2').css('background-position-y', `${-parallax / 30}px`);
+});

@@ -14,6 +14,7 @@ $headers-blue: rgba(39, 36, 67);
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -480,6 +481,7 @@ section {
             border: none;
             outline: none;
             font-weight: 100;
+            cursor: pointer;
         }
     }
 
@@ -1943,8 +1945,10 @@ section {
     height: 800px;
     background-image: url(../assets/aboutassets/fixeddemon.jpg);
     background-position: center;
+    background-position-y: -500px;
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -2327,3 +2331,34 @@ section {
         flex-direction: column !important;
     }
 }
+
+@media screen and (min-width: 1919px) {
+    body {
+        zoom: 110%;
+    }
+} 
+@media screen and (min-width: 2179px) {
+    body {
+        zoom: 120%;
+    }
+} 
+@media screen and (min-width: 2558px) {
+    body {
+        zoom: 140%;
+    }
+} 
+@media screen and (min-width: 3000px) {
+    body {
+        zoom: 155%;
+    }
+} 
+@media screen and (min-width: 3500px) {
+    body {
+        zoom: 165%;
+    }
+} 
+@media screen and (min-width: 4000px) {
+    body {
+        zoom: 190%;
+    }
+} 
