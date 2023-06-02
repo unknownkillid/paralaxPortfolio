@@ -1473,7 +1473,7 @@ section {
   height: 100%;
   background-color: rgb(39, 36, 67);
   position: fixed;
-  z-index: 10000;
+  z-index: 100000;
   right: 0;
   transform: translateX(500px);
   opacity: 0;
