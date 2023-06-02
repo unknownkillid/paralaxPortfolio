@@ -13,7 +13,9 @@
     <header>
         <nav>
             <div class="navbar-container" id="navbar">
-                <a href="./index.html"><div class="home">Tropo Games</div></a>
+                <a href="./index.html">
+                    <div class="home">Tropo Games</div>
+                </a>
 
 
                 <div class="navbar-links">
@@ -23,18 +25,44 @@
                     <a href="./about.html">About</a>
                     <a href="./index.html#inputScroll">Contact</a>
                 </div>
+
+
+                <div class="burgermenuBtn">
+                    
+                    <button id="burger-button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                            xml:space="preserve">
+                            
+                            <g>
+                                <rect id="line1" x="46.6" y="134.9" class="st0" width="406.9" height="34.1" />
+                                <rect id="line2" x="46.6" y="233.9" class="st0" width="406.9" height="34.1" />
+                                <rect id="line3" x="46.6" y="332.9" class="st0" width="406.9" height="34.1" />
+                            </g>
+                        </svg>
+                    </button>
+
+                </div>
             </div>
         </nav>
     </header>
 
+    <div class="navbar-links2" id="navbarLinks2">
+        <a href="./index.html#paralaxsection">Home</a>
+        <a href="./index.html#games">Games</a>
+        <a href="./careers.html">Careers</a>
+        <a href="./about.html">About</a>
+        <a href="./index.html#inputScroll">Contact</a>
+    </div>
+
 
     <script src="js/index.js"></script>
 
-    <script>
-        $(function () {
-            $("#index").load("./index.html");
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/burgermenu.js"></script>
 </body>
 
 </html>

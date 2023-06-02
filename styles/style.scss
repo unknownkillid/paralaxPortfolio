@@ -45,7 +45,7 @@ section {
     background: none;
     opacity: 0;
     position: fixed;
-    z-index: 5000;
+    z-index: 11000;
 
     & a {
         text-decoration: none;
@@ -784,6 +784,7 @@ section {
     }
 }
 
+
 @media screen and (max-width: 712px) {
     .footer-container {
         display: flex !important;
@@ -794,6 +795,11 @@ section {
 @media screen and (max-width: 640px) {
     .navbar-links {
         display: none !important;
+        
+    }
+
+    .burgermenuBtn  {
+        display: block !important;
     }
 }
 
@@ -2362,3 +2368,106 @@ section {
         zoom: 190%;
     }
 } 
+
+button#burger-button {
+  width: 80px;
+  height: 60px;
+  border: none;
+  position: relative;
+  background-color: $main-color;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  outline: none;
+    > svg {
+      width: 100%;
+      height: 100%;
+      #line1 {
+        transition: all 0.5s;
+        transform-origin: center center;
+        transform: rotate(0deg);
+      }
+
+      #line2 {
+        transition: ease-in-out 0.5s;
+        x: 46.6;
+      }
+
+      #line3 {
+        transition: all 0.5s;
+        transform-origin: center center;
+        transform: rotate(0deg);
+      }
+    }
+  
+    &.open {
+      > svg {
+      width: 100%;
+      height: 100%;
+      #line1 {
+        transition: transform 0.5s;
+        transition: ease-in-out 0.3s;
+        transform-origin: center center;
+        transform: translateY(95px) rotate(45deg);
+      }
+
+      #line2 {
+        transition: ease-in-out 0.2s;
+        x: -100%;
+      }
+
+      #line3 {
+        transition: transform 0.5s;
+        transition: ease-in-out 0.3s;
+        transform-origin: center center;
+        transform: translateY(-95px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+
+
+.burgermenuBtn {
+    display: none;
+}
+
+  .navbar-links2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+    display: none;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.4s;
+    
+    & a {
+        font-size: 50px;
+        font-family: $main-text-font;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+  }
+
+  .visibleClass {
+    display: flex;
+    opacity: 1;
+    animation: navbarAnimationDown 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+    @keyframes navbarAnimationDown {
+        100% {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+  }
