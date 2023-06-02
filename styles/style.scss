@@ -1698,7 +1698,6 @@ section {
     opacity: 0;
     overflow-y: scroll;
 
-
     & header {
         width: 100%;
         height: 100px;
@@ -1830,8 +1829,6 @@ section {
     }
 }
 
-
-
 .comein {
     animation: fadein 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -1840,5 +1837,493 @@ section {
     100% {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+// about styles =====================================================================================
+
+.about-main-section {
+    width: 100%;
+    height: 500px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    & .about-ehader-text-container {
+        height: 350px;
+
+        & h3 {
+            color: $headers-blue;
+            font-family: $open-sans-font;
+            font-size: 18px;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: cubeanimation 2s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+            @keyframes cubeanimation {
+                100% {
+                    transform: translateX(0px);
+                    opacity: 1;
+                }
+            }
+        }
+
+        & h1 {
+            font-family: $main-text-font;
+            color: $headers-blue;
+            font-size: 50px;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: cubeanimation 2s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+            @keyframes cubeanimation {
+                100% {
+                    transform: translateX(0px);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.paralaxSection {
+    width: 100%;
+    height: 600px;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: row;
+
+    & .paralaxImgCotnainer {
+        width: 40%;
+        height: 600px;
+        background-image: url(../assets/aboutassets/paralaxabout.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    & .paralaxTextContainer {
+        width: 60%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & .abouttextContainer {
+            width: 450px;
+            height: 600px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transform: translateX(100px);
+            animation: cubeanimation 2s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+            @keyframes cubeanimation {
+                100% {
+                    transform: translateX(0px);
+                    opacity: 1;
+                }
+            }
+
+            & p {
+                font-family: $open-sans-font;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+}
+
+.fixedaboutsection {
+    width: 100%;
+    height: 800px;
+    background-image: url(../assets/aboutassets/fixeddemon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & .fixedbackgroundblendmode {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.571);
+    }
+
+    & .aboutwhatcontainer {
+        width: 900px;
+        height: 600px;
+        z-index: 20;
+
+        & h1 {
+            font-size: 50px;
+            font-family: $main-text-font;
+            color: $headers-blue;
+            text-align: center;
+        }
+
+        & .rowdivabout {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            & .div1 {
+                width: 400px;
+                height: 200px;
+                background-color: white;
+                padding: 20px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                border-radius: 20px;
+
+                & h2 {
+                    color: $main-color;
+                    font-family: $main-text-font;
+                }
+
+                & p {
+                    color: black;
+                    font-family: $open-sans-font;
+                }
+            }
+        }
+
+        & .div2 {
+            width: 900px;
+            height: 200px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            & h2 {
+                color: $main-color;
+                font-family: $main-text-font;
+            }
+
+            & p {
+                color: black;
+                font-family: $open-sans-font;
+            }
+        }
+    }
+}
+
+.foundersSection {
+    width: 100%;
+    height: 900px;
+    padding: 0 100px;
+
+    & .foundersContainer {
+        width: 100%;
+        height: 800px;
+        background-color: $headers-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+
+        & h1 {
+            color: white;
+            font-family: $main-text-font;
+            font-weight: 100;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        & .founderCardsContainer {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+            & .founderCard {
+                width: 400px;
+                height: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: 0.5s;
+
+                &:hover {
+                    img {
+                        transform: scale(105%);
+                    }
+                }
+
+                & img {
+                    border-radius: 20px;
+                    transition: 0.5s;
+                }
+
+                & h2 {
+                    font-family: $main-text-font;
+                    color: white;
+                    font-weight: 100;
+                }
+
+                & h3 {
+                    color: white;
+                    font-family: $open-sans-font;
+                }
+            }
+        }
+    }
+}
+
+.aboutFixedSection2 {
+    width: 100%;
+    height: 800px;
+    background-image: url(../assets/aboutassets/fixed2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .fixed2ContainerAbout {
+        width: 100%;
+        height: 800px;
+        background-color: rgba(174, 33, 61, 0.574);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        & .fixed2FirstTextContainer {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px;
+
+            & h3 {
+                font-family: $open-sans-font;
+                color: white;
+                font-size: 20px;
+            }
+
+            & h1 {
+                font-family: $main-text-font;
+                color: white;
+                font-size: 50px;
+            }
+
+            & p {
+                font-family: $open-sans-font;
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        & .fixed2secondCotnainer {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px 40px;
+
+            & img {
+                transform: translateY(-70px);
+            }
+
+            & h2 {
+                color: $headers-blue;
+                font-family: $main-text-font;
+                font-size: 20px;
+                transform: translateY(-50px);
+            }
+
+            & p {
+                color: $headers-blue;
+                font-family: $open-sans-font;
+                transform: translateY(-40px);
+            }
+
+            & button {
+                width: 200px;
+                height: 50px;
+                background-color: $headers-blue;
+                color: white;
+                font-family: $main-text-font;
+                font-size: medium;
+                border-radius: 15px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                transform: translateY(-40px);
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1286px) {
+    .founderCardsContainer {
+        flex-wrap: wrap !important;
+        height: auto !important;
+    }
+
+    .foundersSection {
+        height: auto !important;
+    }
+
+    .foundersContainer {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .about-ehader-text-container {
+        zoom: 95% !important;
+    }
+}
+@media screen and (max-width: 694px) {
+    .fixedaboutsection {
+        height: 1100px !important;
+
+        & .fixedbackgroundblendmode {
+            height: 1100px !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+    }
+    .rowdivabout {
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        & .div1 {
+            width: 400px !important;
+            margin: 10px 0 !important;
+            height: 300px !important;
+        }
+    }
+
+    .div2 {
+        width: 400px !important;
+        height: 300px !important;
+    }
+
+    .aboutwhatcontainer {
+        height: auto !important;
+        width: 100% !important;
+        align-items: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .about-ehader-text-container {
+        text-align: center !important;
+        padding: 0 !important;
+    }
+
+    .about-main-section {
+        padding: 10px !important;
+    }
+
+    .paralaxImgCotnainer {
+        display: none !important;
+    }
+
+    .paralaxSection {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 692px) {
+    .fixed2ContainerAbout {
+        flex-direction: column !important;
+        height: 1000px !important;
+    }
+    .aboutFixedSection2 {
+        flex-direction: column !important;
+        height: 1000px !important;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .about-main-section {
+        & h1 {
+            font-size: 40px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .about-main-section {
+        & h1 {
+            font-size: 30px !important;
+        }
+    }
+
+    .foundersSection {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .fixed2FirstTextContainer {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 344px) {
+    .abouttextContainer {
+        width: 100% !important;
+        height: auto !important;
+        text-align: center !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column ;
+        & p {
+            font-size: medium !important;
+            width: 200px !important;
+            height: auto !important;
+            text-align: center !important;
+        }
+    }
+
+    .paralaxSection {
+        height: auto !important;
+    }
+
+    .paralaxTextContainer {
+        height:auto !important;
+    }
+
+    .about-ehader-text-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
     }
 }
