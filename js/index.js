@@ -64,3 +64,9 @@ $(document).ready(function() {
     const parallax = $(window).scrollTop();
     $('#fixed2').css('background-position-y', `${-parallax / 30}px`);
 });
+
+$(document).ready(function() {
+    $('#submitMain').click(function(event) {
+        event.preventDefault();
+    });
+});
